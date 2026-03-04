@@ -3,19 +3,41 @@ body {
 }
 
 .navbar-custom {
-    background-color: #0d6efd;
-
+    /*background-color: #0d6efd;*/
+    background: linear-gradient(90deg, #0d6efd, #0a58ca);
+    padding: 12px;
 }
 
-.navbar-custom, .navbar-brand {
+.navbar-custom .navbar-brand {
     color: white; 
     font-weight: bold;
+    font-size: 20px;
 }
 
-.navbar-custom, .nav-link {
+.navbar-custom .nav-link {
     color: white;
+    margin-left: 10px;
+    transition: 0.2s;
 }
 
-.navbar-custom, .nav-link:hover {
+.navbar-custom .nav-link:hover {
     text-decoration: underline;
+    color: #ffd43b;
+}
+
+/* TARJETAS DEL INDEX */
+.home-card {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-btn {
+    margin-top: 15px;
 }

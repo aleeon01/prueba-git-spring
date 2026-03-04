@@ -9,9 +9,25 @@
 </head>
 <body>
     <div th:replace="fragments/navbar :: navbar"></div>
-    <div class="container mt-4">
-        <h1>Bienvenido a tu gestor de tenis</h1>
+    <div class="container mt-5">
+        <h1>Tennis Manager</h1>
         <p>Proyecto de práctica con Spring Boot, Thymeleaf, Hibernate y Git.</p>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="home-card text-center">
+                    <h4>Crear Jugador</h4>
+                    <p>Registro de todos los jugadores inscritos en el ránking.</p>
+                    <a href="/players/new" class="btn btn-primary home-btn">Crear Jugador</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="home-card text-center">
+                    <h4>Lista de Jugadores</h4>
+                    <p>Ver todos los jugadores existentes en el ránking.</p>
+                    <a href="/players" class="btn btn-success home-btn">Ver jugadores</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
